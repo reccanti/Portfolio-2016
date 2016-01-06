@@ -30,6 +30,14 @@
 </li>
 {% endif %}
 
+{% if site.theme.codepen %}
+<li>
+	<a href="https://codepen.io/{{ site.theme.codepen }}" title="{{ site.theme.str_follow_on }} CodePen">
+		<i class="fa fa-fw fa-codepen"></i>
+	</a>
+</li>
+{% endif %}
+
 {% if site.theme.dribbble %}
 <li>
 	<a href="https://dribbble.com/{{ site.theme.dribbble }}" title="{{ site.theme.str_follow_on }} Dribbble">
