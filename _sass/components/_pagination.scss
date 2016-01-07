@@ -1,0 +1,12 @@
+// This controls the Pagination section that appears below the PostLists
+.Pagination {
+  padding: $padding-small $padding-large 0 $padding-large;
+  text-align: center;
+
+  &_button {
+  	  margin: 0 1.5em;
+	  i {
+	    vertical-align: middle;
+	  }
+  }
+}

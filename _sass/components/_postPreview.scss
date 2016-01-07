@@ -1,0 +1,19 @@
+// This styles a Post Prevew that is contained in a Post List. This displays the
+// name, an excerpt, and some metadata about the post and then provides a link
+// to the full post
+.PostPreview {
+  &_teaser {
+    //@extend %padding-regular;
+    width: 100%;
+    margin-bottom: 0;
+    display: inline-block;
+    background-size: $feature-image-size;
+    border-bottom: 1px solid $border-color;
+    p a:hover {
+      @extend %link-hover;
+    }
+  }
+  &_excerpt {
+    margin-top: 1em;
+  }
+}
