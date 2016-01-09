@@ -12,9 +12,12 @@ layout: default
 
   {% include tagline.html %}
 
-  <div class="PostList">
-    <h1 class="PostList_header">Projects</h2>
-    {% for post in paginator.posts %}
+
+<!--   <header class="PostList_header">
+    <h1>Projects</h1>
+  </header> -->
+  <div class="PostList_content">
+    {% for post in site.posts %}
       {% if post.category == "project" %}
       <div class="PostPreview_teaser">
         <header>
@@ -38,14 +41,17 @@ layout: default
     {% endfor %}
   </div>
 
-  <div class="PostList">
-    <h1 class="PostList_header">Blog</h2>
+
+  <header class="PostList_header">
+    <h1>Blog</h1>
+  </header>
+  <div class="PostList_content">
     {% for post in paginator.posts %}
       {% if post.category == "blog" %}
-      <div class="PostList_teaser">
+      <div class="PostPreview_teaser">
         <header>
           <h2>
-            <a class="PostList_link" href="{{ post.url | prepend: site.baseurl }}">
+            <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
               {{ post.title }}
             </a>
           </h2>
@@ -53,7 +59,7 @@ layout: default
             {{ post.date | date: "%B %-d, %Y" }}
           </p>
         </header>
-        <div class="PostList_excerpt">
+        <div class="PostPreview_excerpt">
           {{ post.excerpt }}
           <a class="button" href="{{ post.url | prepend: site.baseurl }}">
             {{ site.theme.str_continue_reading }}

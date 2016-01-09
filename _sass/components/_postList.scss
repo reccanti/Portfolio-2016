@@ -1,8 +1,12 @@
 //This is used to style a list of Post Previews
 .PostList {
-  @extend %padding-regular;
   &_header {
+	//padding: 2% 0;
+  	//background-color: $header-desc-background-color;
     text-align: center;
+  }
+  &_content {
+  	@extend %padding-regular;
   }
 }
 
