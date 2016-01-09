@@ -3,12 +3,14 @@ layout: default
 ---
 
 <div class="home">
-  {% if site.theme.header_text %}
+<!--   {% if site.theme.header_text %}
   <div class="call-out" 
   style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
     {{ site.theme.header_text }}
   </div>
-  {% endif %}
+  {% endif %} -->
+
+  {% include tagline.html %}
 
   <div class="PostList">
     <h1 class="PostList_header">Projects</h2>
@@ -79,3 +81,8 @@ layout: default
   </div>
   {% endif %}
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+
+<script src="{{ site.baseurl }}js/animated_tagline.js"><script>

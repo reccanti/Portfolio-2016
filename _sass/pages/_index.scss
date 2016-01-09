@@ -1,15 +1,32 @@
-// Header text feature
-.call-out {
-  @extend %padding-regular;
-  display: inline-block;
-  width: 100%;
-  //background-color:$header-desc-background-color;
-  background-size: cover;
-  font-size: 1.2em;
-  text-align: center;
-  //color: $header-desc-text-color;
-}
-.call-out p:last-child {
-  margin-bottom: 0;
+// This styles the tagline callout that appears at the top of the page.
+.Callout {
+	//@extend %padding-regular;
+	//padding: $padding-large 0;
+	padding: 18% 12.5%;
+	display: inline-block;
+	width: 100%;
+	//background-color:$header-desc-background-color;
+	background-size: cover;
+	font-size: 1.8em;
+	line-height: 1.5em;
+	font-weight: bold;
+	text-align: center;
+
+	//color: $header-desc-text-color;
+	//border-bottom: 1px solid black;
+
+	& p:last-child {
+	  margin-bottom: 0;
+	}
+
+	&_span {
+		display: inline-block;
+		&-green {
+			color: $link-color;
+		}
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
 }
 
