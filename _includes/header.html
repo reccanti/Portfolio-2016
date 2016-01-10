@@ -15,8 +15,13 @@
 	</div>
 	<nav class="site-nav">
 		<ul>
+			<li>
+				<a class="page-link" href="{{ site.baseurl }}/blog/">
+					Blog
+				</a>
+			</li>
 			{% for page in site.pages %}
-			{% if page.title and page.hide != true %}
+			{% if page.title and page.hide != true and page.title != "Blog" %}
 			<li>
 				<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
 					{{ page.title }}

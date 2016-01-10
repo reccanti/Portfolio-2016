@@ -41,51 +41,6 @@ layout: default
     {% endfor %}
   </div>
 
-
-  <header class="PostList_header">
-    <h1>Blog</h1>
-  </header>
-  <div class="PostList_content">
-    {% for post in paginator.posts %}
-      {% if post.category == "blog" %}
-      <div class="PostPreview_teaser">
-        <header>
-          <h2>
-            <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title }}
-            </a>
-          </h2>
-          <p class="meta">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </p>
-        </header>
-        <div class="PostPreview_excerpt">
-          {{ post.excerpt }}
-          <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-            {{ site.theme.str_continue_reading }}
-          </a>
-        </div>
-      </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-
-  {% if paginator.total_pages > 1 %}
-  <div class="Pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button Pagination_button" >
-      <i class="fa fa-chevron-left"></i>
-      {{ site.theme.str_prev }}
-    </a>
-    {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button Pagination_button" >
-      {{ site.theme.str_next }}
-      <i class="fa fa-chevron-right"></i>
-    </a>
-    {% endif %}
-  </div>
-  {% endif %}
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
