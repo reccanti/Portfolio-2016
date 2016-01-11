@@ -1,15 +1,27 @@
 .ShareSidebar {
 	text-align: right;
 	list-style: none;
-
 	&_button {
-		width: 100%;
-		max-width: 50px;
-		height: 50px;
-		background-color: gray;
-
-		&:hover {
-			background-color: lighten(gray, 10%);
+		margin: 10px;
+		a {
+			color: white;
+			width: 60px;
+			display: block;
+			text-align: center;
+			padding: 13px;
+			border-radius: 2px;
+		} 
+		a:hover {
+			color: white;
+		}
+		&-twitter {
+			@include socialButton($twitter-blue);
+		}
+		&-facebook {
+			@include socialButton($facebook-blue);
+		}
+		&-pinterest {
+			@include socialButton($pinterest-red);
 		}
 	}
 }

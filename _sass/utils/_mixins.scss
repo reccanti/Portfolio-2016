@@ -46,3 +46,11 @@ a.button:hover {
     clear: both;
   }
 }
+
+// Social Media Button hover state
+@mixin socialButton ($brandColor) {
+  background-color: $brandColor;
+  &:hover {
+    background-color: lighten($brandColor, 10%);
+  }
+}

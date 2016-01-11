@@ -48,18 +48,18 @@ header {
     @extend %padding-regular;
   
     .PostBody_content {
-      width: 85%;
-      //margin-left: 10%;
+      width: 90%;
       float: left;
+      padding-left: 30px;
     }
 
     .PostBody_sidebar {
       float: left;
       position: sticky;
       padding: 10px;
-      width: 15%;
-      top: 175px;
+      top: 125px;
       margin-bottom: 150px;
+      width: 10%;
     }
   }
 }
