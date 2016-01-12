@@ -5,6 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 
+	<!-- Twitter Post Info -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@{{ site.theme.twitter }}" />
+	<meta name="twitter:title" content="{{ page.description }}" />
+	<meta name="twitter:description" content="{{ page.description }}" />
+	<meta name="twitter:image" content="{{ site.theme.avatar }}" />
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
