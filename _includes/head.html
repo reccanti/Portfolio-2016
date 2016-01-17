@@ -8,9 +8,16 @@
 	<!-- Twitter Post Info -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@{{ site.theme.twitter }}" />
-	<meta name="twitter:title" content="{{ page.description }}" />
+	<meta name="twitter:title" content="{{ page.title }}" />
 	<meta name="twitter:description" content="{{ page.description }}" />
 	<meta name="twitter:image" content="{{ site.theme.avatar }}" />
+
+	<!-- Facebook OpenGraph Info -->
+	<meta property="og:url"           content="{{ page.url | prepend: site.url }}" />
+	<meta property="og:type"          content="article" />
+	<meta property="og:title"         content="{{ page.title }}" />
+	<meta property="og:description"   content="{{ page.description }}" />
+	<meta property="og:image"         content="{{ site.theme.avatar }}" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
