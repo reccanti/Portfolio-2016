@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
-baseurl: "/Portfolio-2016/" # the subpath of your site, e.g. /blog/
+baseurl: "Portfolio-2016/" # the subpath of your site, e.g. /blog/
 # url: "http://benjwilcox.com" # the base hostname & protocol for your site
-url: "http://reccanti.github.io"
+url: "http://reccanti.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
