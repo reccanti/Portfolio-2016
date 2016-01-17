@@ -17,7 +17,7 @@
 	<meta property="og:type"          content="article" />
 	<meta property="og:title"         content="{{ page.title }}" />
 	<meta property="og:description"   content="{{ page.description }}" />
-	<meta property="og:image"         content="{{ site.theme.avatar | prepend: site.url }}" />
+	<meta property="og:image"         content="{{ site.url }}{{ site.baseurl }}img/{{ site.theme.avatar }}" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
