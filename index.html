@@ -22,7 +22,7 @@ layout: default
       <div class="PostPreview_teaser">
         <header>
           <h2>
-            <a class="PostPreview_link" href="{{ post.url }}">
+            <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
               {{ post.title }}
             </a>
           </h2>
@@ -32,7 +32,7 @@ layout: default
         </header>
         <div class="PostPreview_excerpt">
           {{ post.excerpt }}
-          <a class="button" href="{{ post.url }}">
+          <a class="button" href="{{ post.url | prepend: site.baseurl }}">
             {{ site.theme.str_continue_reading }}
           </a>
         </div>
