@@ -1,7 +1,8 @@
-.ShareSidebar {
+.ShareButtons {
 	text-align: right;
 	list-style: none;
-	&_button {
+	&_btn {
+		display: inline-block;
 		margin: 10px;
 		a {
 			color: white;

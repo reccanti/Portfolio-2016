@@ -11,7 +11,7 @@ layout: default
       </p>
     </header>
     <section class="PostBody">
-      {% include share.html %}
+      {% include sharing/buttons.html %}
       <div class="PostBody_content">{{ content }}</div>
     </section>
   </article>
@@ -46,5 +46,7 @@ layout: default
 </div>
 {% endif %}
 
-<script src="{{ site.baseurl }}/bower_components/Stickyfill/dist/stickyfill.min.js"></script>
-<script src="{{ site.baseurl }}/js/stickySidebar.js"></script>
+{% include sharing/scripts.html %}
+
+<!-- <script src="{{ site.baseurl }}/bower_components/Stickyfill/dist/stickyfill.min.js"></script>
+<script src="{{ site.baseurl }}/js/stickySidebar.js"></script> -->
