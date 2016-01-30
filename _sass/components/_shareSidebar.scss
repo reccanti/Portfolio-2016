@@ -3,7 +3,7 @@
 	list-style: none;
 	&_btn {
 		display: inline-block;
-		margin: 10px;
+		margin: 10px 0;
 		a {
 			color: white;
 			width: 60px;
@@ -11,6 +11,7 @@
 			text-align: center;
 			padding: 13px;
 			border-radius: 2px;
+			transition: background .3s ease;
 		} 
 		a:hover {
 			color: white;

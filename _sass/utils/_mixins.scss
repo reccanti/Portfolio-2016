@@ -50,6 +50,7 @@ a.button:hover {
 // Social Media Button hover state
 @mixin socialButton ($brandColor) {
   background-color: $brandColor;
+  transition: background-color 0.1s ease-in-out;
   &:hover {
     background-color: lighten($brandColor, 10%);
   }
