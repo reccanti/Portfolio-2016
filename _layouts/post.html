@@ -9,7 +9,17 @@ layout: default
     {% if page.author %} - {{ page.author }}{% endif %}
     </p>
   </header>
-  <section class="post-content">{{ content }}</section>
+  <section class="post-content">
+      {{ content }}
+      {% if page.skills %}
+      <h2>Skills</h2>
+        <ul>
+            {% for skill in page.skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+      {% endif %}
+  </section>
 </article>
 
 <!-- Post navigation -->
