@@ -47,6 +47,8 @@ In order to organize our styles more effectively, we used [BEM notation](https:/
 
 Implementing BEM syntax was made much easier with Sass. Partials allowed us to separate our blocks into separate files, and nesting allowed us to group related elements and keep naming consistent. Furthermore, we were able to keep fonts, colors, and animations consistent by using variables and mixins.
 
+![Mockups]({{ site.baseurl }}/projects/assets/learnVCS/nodes.png)
+
 ### Creating React Components
 
 Most of the site was written in standard HTML, but the git tree was written in React. The graph was rendered using a modified version of a component called [React Commits Graph](https://github.com/learnVCS/react-commits-graph). One of my responsibilities was separating out commit nodes into a separate component. This made it easier to manage the colors and styles of this component, and it allowed us to add more complex behaviors like animation.
