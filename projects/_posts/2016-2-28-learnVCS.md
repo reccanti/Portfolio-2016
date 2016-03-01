@@ -4,7 +4,7 @@ title: learnVCS
 description: >
  is a website designed to introduce version control concepts to new students in the RIT Interactive Games and Media program.
 category: project
-feature-img: "projects/assets/learnVCS/learnVCS3.png"
+feature-img: "projects/assets/LearnVCS/learnVCS3.png"
 hidden: true
 skills: ["Sketch", "SCSS", "React"]
 comments: false
@@ -29,7 +29,7 @@ The project was developed for IGM to fill a gap in the curriculum. As students i
 
 ## Tasks
 
-![Mockups]({{ site.baseurl }}/projects/assets/learnVCS/mockups.png)
+![Mockups]({{ site.baseurl }}/projects/assets/LearnVCS/Mockups.png)
 
 ### Creating the Design
 
@@ -37,7 +37,7 @@ We wanted the site to be as simple to use as possible. We decided that a single-
 
 learnVCS was designed to be responsive in order to be accessible on as many devices as possible. Keeping [Atomic Design principles](http://patternlab.io/about.html) in mind, we separated it out into multiple reusable components that would be able to scale and reflow at different screen resolutions.
 
-![Mockups]({{ site.baseurl }}/projects/assets/learnVCS/cards.png)
+![Mockups]({{ site.baseurl }}/projects/assets/LearnVCS/Cards.png)
 
 The visual design of the site was based on Google's [material design guidelines](https://www.google.com/design/spec/material-design/introduction.html#introduction-principles), though with several modifications. The resource links use a [card-like structure](https://www.google.com/design/spec/components/cards.html) so that, in addition to displaying textual information and rich media about the resource, the card itself could serve as a point of action.
 
@@ -47,7 +47,7 @@ In order to organize our styles more effectively, we used [BEM notation](https:/
 
 Implementing BEM syntax was made much easier with Sass. Partials allowed us to separate our blocks into separate files, and nesting allowed us to group related elements and keep naming consistent. Furthermore, we were able to keep fonts, colors, and animations consistent by using variables and mixins.
 
-![Mockups]({{ site.baseurl }}/projects/assets/learnVCS/nodes.png)
+![Mockups]({{ site.baseurl }}/projects/assets/LearnVCS/Nodes.png)
 
 ### Creating React Components
 
