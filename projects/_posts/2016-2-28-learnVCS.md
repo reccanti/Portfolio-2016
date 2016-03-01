@@ -47,7 +47,7 @@ In order to organize our styles more effectively, we used [BEM notation](https:/
 
 Implementing BEM syntax was made much easier with Sass. Partials allowed us to separate our blocks into separate files, and nesting allowed us to group related elements and keep naming consistent. Furthermore, we were able to keep fonts, colors, and animations consistent by using variables and mixins.
 
-![Mockups]({{ site.baseurl }}/projects/assets/LearnVCS/Nodes.png)
+![Mockups]({{ site.baseurl }}/projects/assets/LearnVCS/nodes.png)
 
 ### Creating React Components
 
