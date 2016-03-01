@@ -1,20 +1,35 @@
 ---
 layout: default
 ---
+<<<<<<< HEAD
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <h1 class="title">{{ page.title }}</h1>
+    <p class="meta">
+    <!--{{ page.date | date: "%B %-d, %Y" }}-->
+    {% if page.author %} - {{ page.author }}{% endif %}
+    </p>
+  </header>
+  <section class="post-content">
+      {{ content }}
+  </section>
+</article>
+=======
 <div>
   <article {% if page.feature-img %}class="feature-image"{% endif %}>
     <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
       <h1 class="title">{{ page.title }}</h1>
       <p class="meta">
-      <!--{{ page.date | date: "%B %-d, %Y" }}-->
+      {{ page.date | date: "%B %-d, %Y" }}
       {% if page.author %} - {{ page.author }}{% endif %}
       </p>
     </header>
     <section class="PostBody">
-      <!--{% include sharing/buttons.html %}-->
+      {% include sharing/buttons.html %}
       <div class="PostBody_content">{{ content }}</div>
     </section>
   </article>
+>>>>>>> gh-pages
 
   <!-- Post navigation -->
   {% if site.theme.post_navigation %}
@@ -42,8 +57,13 @@ layout: default
 <!-- Disqus -->
 {% if site.theme.disqus_shortname %}
     {% if page.comments %}
-        <div class="comments">
+    <div class="comments">
         {% include disqus.html %}
-        </div>
+    </div>
     {% endif %}
 {% endif %}
+
+{% include sharing/scripts.html %}
+
+<!-- <script src="{{ site.baseurl }}/bower_components/Stickyfill/dist/stickyfill.min.js"></script>
+<script src="{{ site.baseurl }}/js/stickySidebar.js"></script> -->

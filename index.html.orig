@@ -53,4 +53,8 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
 
+<<<<<<< HEAD
+<script src="{{ site.baseurl }}js/animated_tagline.js"></script>
+=======
 <script src="{{ site.baseurl }}/js/animated_tagline.js"><script>
+>>>>>>> gh-pages

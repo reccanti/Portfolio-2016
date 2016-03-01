@@ -1,0 +1,33 @@
+<ul class="ShareButtons">
+	{% if site.theme.share.twitter %}
+	<li class="ShareButtons_btn ShareButtons_btn-twitter">
+		<a href="https://twitter.com/share" 
+		   class="twitter-share-button" 
+		   data-via="reccanti"
+		   data-text="{{ page.title }}">
+			<i class="fa fa-twitter fa-lg"></i>
+		</a>
+	</li>
+	{% endif %}
+	{% if site.theme.share.facebook %}
+	<li class="ShareButtons_btn ShareButtons_btn-facebook">
+		<a href="http://facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}">
+			<i class="fa fa-facebook fa-lg"></i>
+		</a>
+	</li>
+	{% endif %}
+	{% if site.theme.share.pinterest %}
+	<li class="ShareButtons_btn">
+		<a href="https://www.pinterest.com/pin/create/button/">
+	    	<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" />
+		</a>
+	</li>
+	{% endif %}
+	{% if site.theme.share.reddit %}
+	<li class="ShareButtons_btn">
+		<a class="ShareSidebar_button-pinterest" aria-label="pin on pinterest" href="#">
+			<i class="fa fa-fw fa-pinterest fa-lg"></i>
+		</a>
+	</li>
+	{% endif %}
+</ul>
