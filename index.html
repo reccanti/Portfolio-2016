@@ -31,7 +31,9 @@ layout: default
           </p>
         </header>
         <div class="PostPreview_excerpt">
-          {{ post.excerpt }}
+          <p>
+            {{ post.description }}
+          </p>
           <a class="button" href="{{ post.url | prepend: site.baseurl }}">
             {{ site.theme.str_continue_reading }}
           </a>
@@ -51,4 +53,4 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
 
-<script src="{{ site.baseurl }}js/animated_tagline.js"><script>
+<script src="{{ site.baseurl }}js/animated_tagline.js"></script>

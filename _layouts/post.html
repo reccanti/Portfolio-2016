@@ -11,14 +11,6 @@ layout: default
   </header>
   <section class="post-content">
       {{ content }}
-      {% if page.skills %}
-      <h2>Skills</h2>
-        <ul>
-            {% for skill in page.skills %}
-                <li>{{ skill }}</li>
-            {% endfor %}
-        </ul>
-      {% endif %}
   </section>
 </article>
 
@@ -46,7 +38,9 @@ layout: default
 
 <!-- Disqus -->
 {% if site.theme.disqus_shortname %}
-<div class="comments">
-  {% include disqus.html %}
-</div>
+    {% if page.comments %}
+    <div class="comments">
+        {% include disqus.html %}
+    </div>
+    {% endif %}
 {% endif %}
