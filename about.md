@@ -4,6 +4,4 @@ title: About
 permalink: /about/
 ---
 
-I'm primarily a front-end developer with skills in design and back-end development. From simple static sites to complex web applications, I can get the job done!
-
-I've always liked making new things and sharing them with others. The web makes both of these things easy, which is why I love working on it so much. It's probably also why I spend so much time there! There's lot's of ways to contact me online. Feel free to get in touch!
+I've always been passionate about art and technology and the web provides me with the perfect platform for pursuing both of these interests. Most of my work has been in the front-end, but I also have experience in design and back-end development. When I'm not working, I'm either cooking, drawing, or learning about the latest web trends and technologies. I'm currently available for hire, so if you're looking for a front-end developer or someone to do contract work, I'd be more than happy to talk.
