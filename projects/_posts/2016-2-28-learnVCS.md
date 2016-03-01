@@ -43,7 +43,7 @@ The visual design of the site was based on Google's [material design guidelines]
 
 ### Front-end Styling
 
-In order to organize our styles more effectively, we used [BEM notation](https://css-tricks.com/bem-101/). Under this system components were considered Blocks, and the HTML structures that made up the component were considered Elements. If a particular Element needed variations, such as being a different color or size, it was handled through Modifiers. This system made managing and modifying our styles much easier. We always knew what CSS was styling our components and where to go if we needed to make changes. 
+In order to organize our styles more effectively, we used [BEM notation](https://css-tricks.com/bem-101/). Under this system components were considered Blocks, and the HTML structures that made up the component were considered Elements. If a particular Element needed variations, such as being a different color or size, it was handled through Modifiers. This system made managing and modifying our styles much easier. We always knew which CSS was styling our components and where to go if we needed to make changes. 
 
 Implementing BEM syntax was made much easier with Sass. Partials allowed us to separate our blocks into separate files, and nesting allowed us to group related elements and keep naming consistent. Furthermore, we were able to keep fonts, colors, and animations consistent by using variables and mixins.
 
