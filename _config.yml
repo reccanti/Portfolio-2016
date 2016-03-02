@@ -1,6 +1,7 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://example.com" # the base hostname & protocol for your site
+# url: "http://benjwilcox.com" # the base hostname & protocol for your site
+url: "http://reccanti.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -40,9 +41,19 @@ theme:
   wordpress:
   youtube:
 
+  # Article Sharing
+  share:
+    facebook: true
+    twitter: true
+    pinterest: true
+    reddit: false
+    google_plus: false
+    tumblr: false
+
+
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: benwilcox
   katex: true # Enable if using math markup
 
   # Localization strings

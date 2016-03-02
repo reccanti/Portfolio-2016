@@ -1,0 +1,28 @@
+.ShareButtons {
+	text-align: right;
+	list-style: none;
+	&_btn {
+		display: inline-block;
+		margin: 10px;
+		a {
+			color: white;
+			width: 60px;
+			display: block;
+			text-align: center;
+			padding: 13px;
+			border-radius: 2px;
+		} 
+		a:hover {
+			color: white;
+		}
+		&-twitter {
+			@include socialButton($twitter-blue);
+		}
+		&-facebook {
+			@include socialButton($facebook-blue);
+		}
+		&-pinterest {
+			@include socialButton($pinterest-red);
+		}
+	}
+}

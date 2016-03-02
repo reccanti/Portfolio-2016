@@ -1,17 +1,22 @@
 ---
 ---
-// External
-@import 'external/external';
+// 1. Utilities
+@import 'utils/utils';
 
-// Base
-@import 'base/variables';
-@import 'base/global';
-@import 'base/utility';
+// 2. Vendors
+@import 'vendors/vendors';
 
-// Posts
-@import 'layouts/posts';
-@import 'layouts/index';
+// 3. Base
+@import 'base/base';
 
-// Partials
-@import 'includes/header';
-@import 'includes/footer';
+// 4. Layouts
+@import 'layouts/layouts';
+
+// 5. Components
+@import 'components/components';
+
+// 6. Pages
+@import 'pages/pages';
+
+// 7. Themes
+@import 'themes/themes';

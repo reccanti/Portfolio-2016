@@ -1,0 +1,23 @@
+//This is used to style a list of Post Previews
+.PostList {
+  &_header {
+	//padding: 2% 0;
+  	//background-color: $header-desc-background-color;
+    text-align: center;
+  }
+  &_content {
+  	@extend %padding-regular;
+  }
+}
+
+// Pagination
+// .pagination .button {
+//   margin: 0 1.5em;
+//   i {
+//     vertical-align: middle;
+//   }
+// }
+// .pagination {
+//   padding: $padding-small $padding-large 0 $padding-large;
+//   text-align: center;
+// }

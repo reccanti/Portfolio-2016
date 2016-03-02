@@ -1,0 +1,32 @@
+// This styles the tagline callout that appears at the top of the page.
+.Callout {
+	padding: 18% 12.5%;
+	display: inline-block;
+	width: 100%;
+	background-size: cover;
+	font-size: 1.8em;
+	line-height: 1.5em;
+	font-weight: bold;
+	text-align: center;
+
+	& p:last-child {
+	  margin-bottom: 0;
+	}
+
+	&_span {
+		display: inline-block;
+		&-green {
+			color: $link-color;
+		}
+		&-orange {
+			color: $header-desc-background-color;
+			a {
+				color: $header-desc-background-color;
+			}
+		}
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+}
+
