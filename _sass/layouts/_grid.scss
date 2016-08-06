@@ -1,0 +1,30 @@
+.grid {
+    .columns {
+        &-one {
+            @extend %padding-large;
+        }
+        &-two {
+            @extend %padding-medium;
+            &-left {
+                display: inline-block;
+                vertical-align: top;
+                width: 75%;
+            }
+            &-right {
+                display: inline-block;
+                vertical-align: top;
+                width: 24%;
+            }
+
+            @media(max-width: 768px) {
+                &-left {
+                    width: 100%;
+                }
+                &-right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

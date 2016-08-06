@@ -1,6 +1,6 @@
 article,
 .comments {
-  @extend %padding-regular;
+  // @extend %padding-regular;
   border-bottom: 1px solid $border-color;
   float: left;
   width: 100%;
@@ -45,7 +45,7 @@ header {
   }
   .PostBody {
     @extend %clearfix;
-    @extend %padding-regular;
+    // @extend %padding-regular;
   
     .PostBody_content {
       width: 100%;

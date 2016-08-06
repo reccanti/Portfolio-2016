@@ -1,0 +1,8 @@
+<h2>{{ include.title }}</h2>
+{% assign posts = site.posts | where: "category",include.subset %}
+{% for post in posts limit: include.limit %} 
+<p>
+  <strong>{{ post.title }}</strong>
+  {{ post.description }}
+</p>
+{% endfor %}

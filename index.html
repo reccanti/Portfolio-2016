@@ -3,51 +3,45 @@ layout: default
 ---
 
 <div class="home">
-<!--   {% if site.theme.header_text %}
-  <div class="call-out" 
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
-    {{ site.theme.header_text }}
-  </div>
-  {% endif %} -->
-
   {% include tagline.html %}
-
-
-<!--   <header class="PostList_header">
-    <h1>Projects</h1>
-  </header> -->
-  <div class="PostList_content">
-    {% for post in site.posts %}
-      {% if post.category == "project" %}
-      <div class="PostPreview_teaser">
-        <header>
-          <h2>
-            <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title }}
-            </a>
-          </h2>
-          <!--<p class="meta">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </p>-->
-        </header>
-        <div class="PostPreview_excerpt">
-          <p>
-            {{ post.description }}
-          </p>
-          <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-            {{ site.theme.str_continue_reading }}
-          </a>
-        </div>
-        <div>
-            <p class="meta">
-                
-            </p>
-        </div>
+  <div class="grid">
+    <div class="columns-two">
+      <div class="columns-two-left PostList_content">
+        {% for post in site.posts %}
+          {% if post.category == "project" %}
+          <div class="PostPreview_teaser">
+            <header>
+              <h2>
+                <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
+                  {{ post.title }}
+                </a>
+              </h2>
+              <!--<p class="meta">
+                {{ post.date | date: "%B %-d, %Y" }}
+              </p>-->
+            </header>
+            <div class="PostPreview_excerpt">
+              <p>
+                {{ post.description }}
+              </p>
+              <a class="button" href="{{ post.url | prepend: site.baseurl }}">
+                {{ site.theme.str_continue_reading }}
+              </a>
+            </div>
+            <div>
+                <p class="meta">
+                    
+                </p>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
       </div>
-      {% endif %}
-    {% endfor %}
+      <aside class="columns-two-right Sidebar">
+        {% include sidebar.html title="Recent Blog Posts" subset="blog" limit=3 %}
+      </aside>
+    </div>
   </div>
-
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
