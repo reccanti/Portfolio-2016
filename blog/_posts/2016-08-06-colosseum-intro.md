@@ -1,4 +1,11 @@
-## Introducing Colosseum
+---
+layout: post
+title: Introducing Colosseum!
+description: >
+ Colosseum is a game in which you build a team of characters to battle powerful opponents.
+category: blog
+tags: [gamedev]
+---
 
 At the end of Spring, I'd just come off working on a lot of big projects. These were all really interesting, and I'm glad I had a chance to work on them, but I still felt exhausted and needed a break. I wanted to do something I've never done before. I've always wanted to make an RPG though, and since I suddenly had some free time, I decided to open up RPG Maker MV and see what I came up with. The end result was [Colosseum](https://reccanti-rpgs.herokuapp.com/).
 
