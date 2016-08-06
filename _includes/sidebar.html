@@ -1,8 +1,10 @@
-<h2>{{ include.title }}</h2>
+<h2 class="Sidebar_header">{{ include.title }}</h2>
 {% assign posts = site.posts | where: "category",include.subset %}
 {% for post in posts limit: include.limit %} 
-<p>
-  <strong>{{ post.title }}</strong>
-  {{ post.description }}
-</p>
+<a href="{{ post.url | prepend: site.baseurl }}">
+    <p class="Sidebar_post">
+      <strong>{{ post.title }}</strong>
+      {{ post.description }}
+    </p>
+</a>
 {% endfor %}

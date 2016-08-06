@@ -1,3 +1,19 @@
 .Sidebar {
     padding: 0 15px;
+    &_header {
+        font-size: $font-size;
+    }
+    &_post {
+        font-size: $font-size * 0.7;
+        font-style: italic;
+        margin: 0;
+        padding: $padding-small 0;
+        &:hover {
+            background-color: $background-darker;
+        }
+    }
+
+    a {
+        color: $text-color;
+    }
 }
