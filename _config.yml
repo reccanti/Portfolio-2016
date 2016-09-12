@@ -6,7 +6,7 @@ url: "http://reccanti.github.io"
 gems: [jekyll-paginate]
 
 # THEME-SPECIFIC CONFIGURATION
-theme:
+styles:
   # Meta
   title: Ben Wilcox
   avatar: profile4.png

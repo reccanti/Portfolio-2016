@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div class="home">
-<!--   {% if site.theme.header_text %}
+<!--   {% if site.styles.header_text %}
   <div class="call-out" 
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
-    {{ site.theme.header_text }}
+  style="background-image: url('{{ site.baseurl }}/{{ site.styles.header_text_feature_image }}')">
+    {{ site.styles.header_text }}
   </div>
   {% endif %} -->
 
@@ -35,7 +35,7 @@ layout: default
             {{ post.description }}
           </p>
           <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-            {{ site.theme.str_continue_reading }}
+            {{ site.styles.str_continue_reading }}
           </a>
         </div>
         <div>
