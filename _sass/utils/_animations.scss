@@ -1,0 +1,71 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: rotateY(-90deg);
+        transform-origin: 100% 50%;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-1 {
+    opacity: 0;
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    @include step-animation(1s, 1, $timeline);
+}
+
+.fade-in-2 {
+    opacity: 0;
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    @include step-animation(1s, 2, $timeline);
+}
+
+.fade-in-3 {
+    opacity: 0;
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    @include step-animation(1s, 3, $timeline);
+}
+
+.fade-in-4 {
+    opacity: 0;
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    @include step-animation(1s, 4, $timeline);
+}
+
+
+.first {
+    background-color: lightblue;
+    opacity: 0;
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    @include step-animation(1.2s, 5, $timeline, .2);
+}
+
+.second {
+    background-color: lightgreen;
+    opacity: 0;
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    @include step-animation(1.2s, 6, $timeline, .2);
+}
+
+.third {
+    background-color: aqua;
+    opacity: 0;
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    @include step-animation(1.2s, 7, $timeline, .2);
+}
+
+.fourth {
+    background-color: teal;
+    opacity: 0;
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    @include step-animation(1.2s, 8, $timeline, .2);
+}

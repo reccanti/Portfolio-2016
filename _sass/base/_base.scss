@@ -1,4 +1,22 @@
 // Handle the imporation of site base materials. These include things that will
 // be used all over the site, like variables and mixins for convenience, and
 // global settings.
-@import 'global';
+// @import 'global';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

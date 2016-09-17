@@ -1,22 +1,29 @@
 ---
 ---
-// 1. Utilities
-@import 'utils/utils';
+// // 1. Utilities
+// @import 'utils/utils';
 
-// 2. Vendors
-@import 'vendors/vendors';
+// // 2. Vendors
+// @import 'vendors/vendors';
 
-// 3. Base
+// // 3. Base
+// @import 'base/base';
+
+// // 4. Layouts
+// @import 'layouts/layouts';
+
+// // 5. Components
+// @import 'components/components';
+
+// // 6. Pages
+// @import 'pages/pages';
+
+// // 7. Themes
+// @import 'themes/themes';
+
+@import 'utils/timeline';
+@import 'utils/animations';
+
 @import 'base/base';
 
-// 4. Layouts
-@import 'layouts/layouts';
-
-// 5. Components
-@import 'components/components';
-
-// 6. Pages
-@import 'pages/pages';
-
-// 7. Themes
-@import 'themes/themes';
+@import 'layouts/grid';

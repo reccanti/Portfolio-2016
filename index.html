@@ -1,50 +1,30 @@
 ---
-layout: default
 ---
-
-<div class="home">
-  {% include tagline.html %}
-  <div class="grid">
-    <div class="columns-two">
-      <div class="columns-two-left PostList_content">
-        {% for post in site.posts %}
-          {% if post.category == "project" %}
-          <div class="PostPreview_teaser">
-            <header>
-              <h2>
-                <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
-                  {{ post.title }}
-                </a>
-              </h2>
-              <!--<p class="meta">
-                {{ post.date | date: "%B %-d, %Y" }}
-              </p>-->
-            </header>
-            <div class="PostPreview_excerpt">
-              <p>
-                {{ post.description }}
-              </p>
-              <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-                {{ site.styles.str_continue_reading }}
-              </a>
-            </div>
-            <div>
-                <p class="meta">
-                    
-                </p>
-            </div>
-          </div>
-          {% endif %}
-        {% endfor %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    <h1 class="title">
+      <p class="fade-in-1">Hi I'm Ben,</p>
+      <p class="fade-in-2">and I make</p>
+      <p class="fade-in-3 cool">cool stuff</p>
+      <p class="fade-in-4">for the web</p>
+    </h1>
+    <div class="grid">
+      <div class="grid-item first">
+        <h2>Inspire</h2>
       </div>
-      <aside class="columns-two-right Sidebar">
-        {% include sidebar.html title="Recent Blog Posts" subset="blog" limit=3 %}
-      </aside>
+      <div class="grid-item second">
+        <h2>Micro Projects</h2>
+      </div>
+      <div class="grid-item third">
+        <h2>learnVCS</h2>
+      </div>
+      <div class="grid-item fourth">
+        <h2>ADS</h2>
+      </div>
     </div>
-  </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
-
-<script src="{{ site.baseurl }}/js/animated_tagline.js"><script>
+  </body>
+</html>

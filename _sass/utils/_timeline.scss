@@ -1,0 +1,35 @@
+$timeline: (
+  1: 0s
+);
+
+@mixin step-animation ($duration, $step, $timeline, $interval: 0) {
+  $delay: delay-from-step($duration, $step, $timeline, $interval);
+  animation-duration: #{$duration};
+  animation-delay: $delay;
+}
+
+@function update-timeline($duration, $step, $timeline) {
+  // adds the step to the timeline if it exists
+  // otherwise, choose highest duration
+  @if (map-has-key($timeline, $step)) {
+    @if ($duration > map-get($timeline, $step)) {
+      $timeline: map-merge($timeline, ($step: $duration));
+    }
+  } @else {
+    $timeline: map-merge($timeline, ($step: $duration));
+  }
+  @return $timeline;
+}
+
+@function delay-from-step ($duration, $step, $timeline, $interval) {
+  $timeline: update-timeline($duration, $step, $timeline) !global;
+
+  // iterate through array and add values
+  $sum: 2s;
+  @each $i, $dur in $timeline {
+    @if ($i < $step) {
+      $sum: $sum + $dur + $interval;
+    }
+  }
+  @return $sum;
+}
