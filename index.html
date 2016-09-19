@@ -10,6 +10,7 @@ layout: default
         {% for post in site.posts %}
           {% if post.category == "project" %}
           <div class="PostPreview_teaser">
+            <img class="PostPreview_img" src="{{ post.preview-img | prepend: site.baseurl }}" />
             <header>
               <h2>
                 <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
@@ -21,6 +22,14 @@ layout: default
               </p>-->
             </header>
             <div class="PostPreview_excerpt">
+              {% if post.skills.size > 0 %}
+              <p class="PostPreview_skills">
+                <strong>Tools:</strong>
+                {% for skill in post.skills %}
+                <span>{{ skill }}</span>
+                {% endfor %}
+              </p>
+              {% endif %}
               <p>
                 {{ post.description }}
               </p>

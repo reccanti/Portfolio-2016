@@ -13,7 +13,17 @@
       @extend %link-hover;
     }
   }
+  &_skills {
+    // font-size: $font-size-small;
+    color: $text-color-light;
+    span:not(:last-child)::after {
+      content: " |";
+    }
+  }
   &_excerpt {
     margin-top: 1em;
+  }
+  &_img {
+    border: 6px solid black;
   }
 }

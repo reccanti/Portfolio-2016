@@ -4,6 +4,7 @@ title: learnVCS
 description: >
  is a website designed to introduce version control concepts to new students in the RIT Interactive Games and Media program.
 category: project
+preview-img: "projects/assets/LearnVCS/Mockups.png"
 feature-img: "projects/assets/LearnVCS/learnVCS3.png"
 hidden: true
 skills: ["Sketch", "SCSS", "React"]
