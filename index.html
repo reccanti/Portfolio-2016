@@ -9,7 +9,12 @@ layout: default
         {% for post in site.posts %}
           {% if post.category == "project" %}
           <div class="PostPreview_teaser">
+            {% if post.preview-pen %}
+            <p data-height="415" data-theme-id="0" data-slug-hash="{{ post.preview-pen }}" data-default-tab="result" data-user="recanti" class='codepen'>See the Pen <a href='http://codepen.io/reccanti/pen/{{ post.preview-pen }}/'>Dance All Night</a> by B. Wilcox (<a href='http://codepen.io/reccanti'>@reccanti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+            {% else if post.preview-img %}
             <img class="PostPreview_img" src="{{ post.preview-img | prepend: site.baseurl }}" />
+            {% endif %}
             <header>
               <h2>
                 <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
