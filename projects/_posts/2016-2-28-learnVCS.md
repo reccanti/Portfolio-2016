@@ -2,7 +2,7 @@
 layout: post
 title: learnVCS
 description: >
- is a website designed to introduce version control concepts to new students in the RIT Interactive Games and Media program.
+ A website designed to introduce version control concepts to new students in the Rochester Institute of Technology's Interactive Games and Media program.
 category: project
 preview-img: "https://cloud.githubusercontent.com/assets/10334948/18622628/ebd1f8f2-7dff-11e6-8253-9049ace15ae6.png"
 feature-img: "projects/assets/LearnVCS/learnVCS3.png"
