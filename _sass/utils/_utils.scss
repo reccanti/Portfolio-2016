@@ -1,3 +1,9 @@
 //This section contains useful mixins and variables
 @import "variables";
 @import "mixins";
+
+.hide-small {
+    @media(max-width: 480px) {
+        display: none;
+    }
+}
