@@ -5,15 +5,16 @@
     }
     &_post {
         font-size: $font-size * 0.7;
-        font-style: italic;
         margin: 0;
         padding: $padding-small 0;
-        &:hover {
-            background-color: $background-darker;
-        }
     }
 
     a {
         color: $text-color;
+        font-style: italic;
+        display: block;
+        &:hover {
+            background-color: $background-darker;
+        }
     }
 }
