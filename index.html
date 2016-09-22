@@ -43,9 +43,17 @@ layout: default
               <p>
                 {{ post.description }}
               </p>
-              <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-                {{ site.styles.str_continue_reading }}
+              {% for link in post.links %}
+              {% if link.url %}
+              <a class="button" href="{{ link.url }}">
+                {{ link.name }}
               </a>
+              {% elsif link.post %}
+              <a class="button" href="{{ post.url | prepend: site.baseurl }}">
+                Read more
+              </a>
+              {% endif %}
+              {% endfor %}
             </div>
             <div>
                 <p class="meta">

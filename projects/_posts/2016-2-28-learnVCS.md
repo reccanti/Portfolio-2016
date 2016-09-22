@@ -8,6 +8,9 @@ preview-img: "https://cloud.githubusercontent.com/assets/10334948/18622628/ebd1f
 feature-img: "projects/assets/LearnVCS/learnVCS3.png"
 hidden: true
 skills: ["Sketch", "SCSS", "React"]
+links:
+  - name: "View code on GitHub"
+    url: "https://github.com/learnVCS/learnVCS.github.io"
 comments: false
 --- 
 
