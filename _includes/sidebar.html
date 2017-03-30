@@ -1,14 +1,8 @@
 <h2 class="Sidebar_header">About</h2>
 <p class="Sidebar_post">
-    I'm Ben Wilcox, a web developer from the <strong>Rochester Institute of Technology.</strong> I'm currently working at <strong>Global Thinking</strong> in Alexandria, VA. These are some of the projects I've worked on over the past couple of years.
+    I'm Ben Wilcox, a web developer from the <strong>Rochester Institute of Technology</strong> and I'm graduating in <strong>May, 2017</strong>. These are some of the projects I've worked on over the past couple of years.
 </p>
-<h2 class="Sidebar_header">{{ include.title }}</h2>
-{% assign posts = site.posts | where: "category",include.subset %}
-{% for post in posts limit: include.limit %} 
-<a href="{{ post.url | prepend: site.baseurl }}">
-    <p class="Sidebar_post">
-      <strong>{{ post.title }}</strong>
-      {{ post.description }}
-    </p>
-</a>
-{% endfor %}
+<h2>Blog</h2>
+<p>
+    I'm working on a blog, you can check out some of my recent posts <a href="reccanti.com">here!</a>
+</p>
