@@ -23,9 +23,7 @@ layout: default
             {% endif %}
             <header>
               <h2>
-                <a class="PostPreview_link" href="{{ post.url | prepend: site.baseurl }}">
-                  {{ post.title }}
-                </a>
+                {{ post.title }}
               </h2>
               <!--<p class="meta">
                 {{ post.date | date: "%B %-d, %Y" }}
